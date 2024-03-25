@@ -84,7 +84,28 @@ public class Sketch extends PApplet {
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
   public void draw_section2(){
-    
+
+    int intA = 0;
+    int intB = 0;
+
+    for(int intRowTwo = 0; intRowTwo < 30; intRowTwo++){
+      for(int intColumnTwo = 0; intColumnTwo < 30; intColumnTwo++){
+        intA = 303 + 10 * intRowTwo;  //Instead of zero, calculate the proper intX location using 'intRow'
+        intB = 300 + 3 + 10 * intColumnTwo; //Instead of zero, calculate the proper intY location using 'intColumn'
+
+        if ((intRowTwo % 2) == 0){
+        fill(255);
+        }
+
+        else  {
+          fill(0);
+        }
+
+        noStroke();
+        rect(intA, intB, 5, 5);
+
+      }
+    }
 
   }
 
@@ -93,6 +114,7 @@ public class Sketch extends PApplet {
    * Don't use multiple 'if' statements.
    */
   public void draw_section3(){
+    
 
   }
 
