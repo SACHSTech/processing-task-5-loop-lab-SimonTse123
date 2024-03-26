@@ -212,24 +212,35 @@ public class Sketch extends PApplet {
     int intK = 0;
     int intL = 0;
 
-    for(int intColumnSix = 0; intColumnSix < 32; intColumnSix++){
-      for(int intRowSix = 0; intRowSix < intColumnSix -1; intRowSix++){
-        intK = 600 + 3 + 10 * intRowSix;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intL = 300 + 13 - 10 * intColumnSix; //Instead of zero, calculate the proper intY location using 'intColumn'
+    for(int intColumnSeven = 0; intColumnSeven < 32; intColumnSeven++){
+      for(int intRowSeven = 0; intRowSeven < intColumnSeven -1; intRowSeven++){
+        intK = 600 + 3 + 10 * intRowSeven;  //Instead of zero, calculate the proper intX location using 'intRow'
+        intL = 300 + 13 - 10 * intColumnSeven; //Instead of zero, calculate the proper intY location using 'intColumn'
         
-        fill(0);
         noStroke();
         rect(intK, intL, 5, 5);
       }
     }
   }
   public void draw_section8(){
+    int intM = 0;
+    int intN = 0;
 
+    for(int intColumnEight = 0; intColumnEight < 32; intColumnEight++){
+      for(int intRowEight = 0; intRowEight < intColumnEight - 1; intRowEight++){
+        intM = 1200 - 7 - 10 * intRowEight;  //Instead of zero, calculate the proper intX location using 'intRow'
+        intN = 300 + 13 - 10 * intColumnEight; //Instead of zero, calculate the proper intY location using 'intColumn'
+        
+        noStroke();
+        rect(intM, intN, 5, 5);
+      }
+    }
   }
+ }
 
 
 
 
 
 
-}
+
