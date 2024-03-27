@@ -182,6 +182,8 @@ public class Sketch extends PApplet {
       for(int intRowFive = 0; intRowFive < intColumnFive - 1 ; intRowFive++){
         intG = 296 - 3 - 10 * intRowFive; 
         intH = 0 - 7 + 10 * intColumnFive; 
+
+        fill(255);
         noStroke();
         rect(intG, intH, 5, 5);
       }
